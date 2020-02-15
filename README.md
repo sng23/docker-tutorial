@@ -34,3 +34,18 @@ Then build up the apps dependencies on the containerized filesystem.
 Finish up by specifying the containers inputs and outputs. 
 
 ![App running on :8000](images/Running%20app%20from%20docker%20container.PNG)
+
+
+## Section 3
+[Part 3: Share images on Docker Hub](https://docs.docker.com/get-started/part3/)
+
+### Commands Run
+1. `docker image tag bulletinboard:1.0 sgrodberg/bulletinboard:1.0`
+2. `docker image push sgrodberg/bulletinboard:1.0`
+
+### What I Learned
+* Multiple tags can refer to the same image
+* Docker has a repository called Docker Hub where images can be published
+* Dockerfile should be under version control
+
+![Published image to docker hub](images/Published%20docker%20image.PNG)
